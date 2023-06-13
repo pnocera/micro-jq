@@ -1,5 +1,6 @@
 node_modules
 src/parser.ts
+src/grammar.ts
 dist
 .eslintcache
 .idea

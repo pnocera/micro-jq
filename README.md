@@ -19,13 +19,20 @@ with the input object. As each op code executes, the context is updated.
 
 ## Goals
 
-   * Implement enough of the JQ syntax to be useful
-   * Implement it the same as JQ
+- Implement enough of the JQ syntax to be useful
+- Implement it the same as JQ
 
 ## Non-goals
 
-   * Complete implementation of JQ (but the level of completeness may
-     increase over time).
+- Complete implementation of JQ (but the level of completeness may
+  increase over time).
 
 [peg]: https://en.wikipedia.org/wiki/Parsing_expression_grammar
 [peggy]: https://peggyjs.org/
+
+## Additional feature
+
+Generic boolean expression evaluation
+
+shamelessly adapted from
+https://github.com/hashicorp/js-bexpr/

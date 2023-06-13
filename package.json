@@ -8,8 +8,10 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "peggy --plugin ./node_modules/ts-pegjs --cache -o ./src/parser.ts ./src/parser.pegjs && tsc --declaration --outdir dist src/*.ts",
+    "build.grammar": "peggy --plugin ./node_modules/ts-pegjs -o src/grammar.ts ./src/grammar.pegjs  && tsc --declaration --outdir dist src/*.ts",
     "lint": "eslint --cache src",
-    "test": "yarn lint && yarn build && jest"
+    "all": "yarn build && yarn build.grammar && jest",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
